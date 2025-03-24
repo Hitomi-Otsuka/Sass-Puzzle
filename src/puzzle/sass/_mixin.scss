@@ -1,8 +1,10 @@
-@mixin btn($background) {
+@use 'variable';
+
+@mixin btn($buttonColor) {
   height: 40px;
   width: 40px;
   margin: 10px 0px 10px 10px;
-  background: $background;
+  background: $buttonColor;
 }
 
 .btn1 {
@@ -17,10 +19,10 @@
   @include btn(#0000ff)
 }
 
-@mixin main-btn($background) {
+@mixin main-btn($buttonColor) {
   height: 40px;
   width: 140px;
-  background: $background;
+  background: $buttonColor;
   margin: 5px;
 }
 

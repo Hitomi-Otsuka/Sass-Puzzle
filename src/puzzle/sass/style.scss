@@ -1,4 +1,5 @@
 @use 'mixin';
+@use 'variable';
 
 $maxWidth: 400px;
 
@@ -8,14 +9,14 @@ $maxWidth: 400px;
 }
 
 .header {
-  background: #141f40;
+  background: variable.$navy;
   position: absolute;
 }
 
 .btns {
   position: relative;
   display: flex;
-  background: white;
+  background: variable.$white;
   margin: 20px;
   width: 160px;
   top: 20px;
@@ -29,18 +30,18 @@ $maxWidth: 400px;
 .sidebar {
   height: 250px;
   width: 150px;
-  background: #80bfa8;
+  background: variable.$green;
 }
 
 .main {
   height: 250px;
   width: 250px;
-  background: #8c2727;
+  background: variable.$red;
 
   .btn-wrapper {
   height: 50px;
   width: 150px;
-  background: white;
+  background: variable.$white;
   margin-left: 40px;
   display: inline-block;
 
@@ -53,5 +54,5 @@ $maxWidth: 400px;
 .footer {
   height: 100px;
   width: $maxWidth;
-  background: #d98d30;
+  background: variable.$brown;
 }
