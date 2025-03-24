@@ -24,11 +24,23 @@ $maxWidth: 400px;
 }
 
 .btn {
+  @include mixin.btn();
   @each $name in variable.$classNames {
     $index_key: index(variable.$classNames, $name);
     $color : nth(variable.$buttonColor, $index_key);
-    &__#{$name} {
-      background-color: variable.$buttonColor;
+    &.#{$name} {
+      background-color: $color;
+    }
+  }
+}
+
+.main-btn {
+  @include mixin.main-btn();
+  @each $name in variable.$classNames {
+    $index_key: index(variable.$classNames, $name);
+    $color : nth(variable.$buttonColor, $index_key);
+    &.#{$name} {
+      background-color: $color;
     }
   }
 }
