@@ -1,0 +1,57 @@
+@use 'mixin';
+
+$maxWidth: 400px;
+
+.header, .footer {
+  height: 100px;
+  width: $maxWidth;
+}
+
+.header {
+  background: #141f40;
+  position: absolute;
+}
+
+.btns {
+  position: relative;
+  display: flex;
+  background: white;
+  margin: 20px;
+  width: 160px;
+  top: 20px;
+  left: 200px;
+}
+
+.flex {
+  display: flex;
+}
+
+.sidebar {
+  height: 250px;
+  width: 150px;
+  background: #80bfa8;
+}
+
+.main {
+  height: 250px;
+  width: 250px;
+  background: #8c2727;
+
+  .btn-wrapper {
+  height: 50px;
+  width: 150px;
+  background: white;
+  margin-left: 40px;
+  display: inline-block;
+
+  &:first-child {
+    margin-top: 60px;
+  }
+}
+}
+
+.footer {
+  height: 100px;
+  width: $maxWidth;
+  background: #d98d30;
+}
