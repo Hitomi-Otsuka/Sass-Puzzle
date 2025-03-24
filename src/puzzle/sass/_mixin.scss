@@ -7,35 +7,9 @@
   background: $buttonColor;
 }
 
-.btn1 {
-  @include btn(#a9004b)
-}
-
-.btn2 {
-  @include btn(#ff863f)
-}
-
-.btn3 {
-  @include btn(#0000ff)
-}
-
 @mixin main-btn($buttonColor) {
   height: 40px;
   width: 140px;
   background: $buttonColor;
   margin: 5px;
-}
-
-main {
-  .btn1 {
-  @include main-btn(#a9004b)
-  }
-
-  .btn2 {
-  @include main-btn(#ff863f)
-  }
-
-  .btn3 {
-  @include main-btn(#0000ff)
-  }
 }

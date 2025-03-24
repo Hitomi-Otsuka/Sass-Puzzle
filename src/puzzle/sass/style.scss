@@ -23,6 +23,16 @@ $maxWidth: 400px;
   left: 200px;
 }
 
+.btn {
+  @each $name in variable.$classNames {
+    $index_key: index(variable.$classNames, $name);
+    $color : nth(variable.$buttonColor, $index_key);
+    &__#{$name} {
+      background-color: variable.$buttonColor;
+    }
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -56,3 +66,4 @@ $maxWidth: 400px;
   width: $maxWidth;
   background: variable.$brown;
 }
+
