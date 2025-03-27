@@ -1,39 +1,13 @@
-@mixin btn($background) {
+@use 'variable';
+
+@mixin btn() {
   height: 40px;
   width: 40px;
   margin: 10px 0px 10px 10px;
-  background: $background;
 }
 
-.btn1 {
-  @include btn(#a9004b)
-}
-
-.btn2 {
-  @include btn(#ff863f)
-}
-
-.btn3 {
-  @include btn(#0000ff)
-}
-
-@mixin main-btn($background) {
+@mixin main-btn() {
   height: 40px;
   width: 140px;
-  background: $background;
   margin: 5px;
-}
-
-main {
-  .btn1 {
-  @include main-btn(#a9004b)
-  }
-
-  .btn2 {
-  @include main-btn(#ff863f)
-  }
-
-  .btn3 {
-  @include main-btn(#0000ff)
-  }
 }
